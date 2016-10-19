@@ -1,0 +1,156 @@
+﻿section, header, footer, aside, nav, article{
+	display: block;
+}
+h1, h2, h3 {
+	color : #FF7F2A;
+}
+#_cabecera, #_menu {
+	background-color: #ddd;
+	clear: both;
+	margin: 0 auto;
+}
+#_fijo  {
+	top:0;
+	left:0;
+	width:100%;
+	position:fixed;
+}
+#_cabecera h1 {
+	margin: 0 0 0 10px;
+}
+#_pie h6 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #999;
+	margin: 10px 0 0 10px;
+}
+#_menu {
+	display: block !important;
+	height: auto !important;
+	padding-bottom: 0px;
+	overflow: visible !important;
+	max-height: 340px;
+}
+#_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	display: block;
+	background: url(../img/degradado1.png) repeat-x 0px 0px;
+	background-color: #000;
+}
+#_menu ul li {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+	padding: 0 10px;
+}
+#_menu ul li a {
+	font-size: 18px;
+	text-decoration: none;
+	color: #999;
+}
+#_menu ul li a:hover {
+	color: #ffc;
+}
+body {
+	background-color: #4e4e4e;
+}  
+#_contenido {
+	margin-top: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	display:flex;
+	flex-wrap: wrap;
+}
+#_lateral li{
+	margin:0 0 15px -20px;
+	font-size: 14px;
+}
+#_lateral ul li a{
+	color: #FFBF00;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+}
+#_lateral ul li a:hover{
+	background-color: #6B6B6B;
+}
+#_lateral {
+	background-color: #000;
+	border: 1px solid #E3E3E3;
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+	/* top:60px; */
+	margin-left: 2%;		
+	display:inline-block;
+	width: 21%;
+	/*height: 100%;*/
+	/* position:top; */
+}
+.lateral ul  li a.active {
+	background-color:#999;
+}
+div._articulo.inactive {
+	display: none;
+}  
+._articulo {
+	box-sizing: border-box;
+	background-color: #000;
+	border: 1px solid #E3E3E3;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+	margin-right:1%;
+	padding: 30px;
+	width: 73%;
+	margin-left: .5%;
+	color: #999;
+	border-radius: 5px;
+}
+p {
+	color: #999;
+	margin-bottom: 22px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Helvetica Neue",Helvetica,Verdana,Arial,sans-serif;
+	line-height: 1.7;
+}
+.btn {
+	color: #FFF;
+	background-color: #04C;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-image: linear-gradient(to bottom, #08C, #04C);
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	padding: 1px 19px;
+	font-size: 10px;
+	border-radius: 6px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+	text-decoration: none;
+}
+.btn:hover, .btn:focus {
+	text-decoration: none;
+	background-position: 0px -15px;
+	transition: background-position 0.1s linear 0s;
+	outline: thin dotted #333;
+	outline-offset: -2px;
+}
+.btnfijo  {
+	margin: 20px 20px;
+	bottom:60px;
+	left:0;
+	position:fixed;
+}
+.clear {clear: both;}
+.dcha {float: right;}
