@@ -31,7 +31,7 @@
 					<ul>
 						<li><a href="#page-1">INSTRUCCIONES</a> </li>
 						<li><a href="#page-2">LISTADO</a> </li>
-						<li><a href="#page-3">Diseño HTML</a> </li>
+						<li><a href="#page-3">ACTUALIZAR</a> </li>
 						<li><a href="#page-4">Berperan.github.io</a> </li>
 					</ul>
 				</div>
@@ -66,17 +66,15 @@
 			<div class="_articulo" id="page-3">
 
 				<header>
-					<h2>Diseño HTML de esta Plantilla </h2>
+					<h2>Como Actualizar Repositorio </h2>
 				</header>
-				<p>div con .contenedor </p>
-				<p>div con #_fijo (menu de cabecera) con nav #_menu conteniendo ul con li de links</p>
-				<p>div #_contenido con aside #lateral y div .lateral con ul y li de links a los articulos #page-1 2 3 etc</p>
-				<p>dentro del mismo div #_contenido div ._articulo #page-1 2 3 etc con header y parrafos p necesarios</p>
-				<p>div .clear</p>
-				<p>footer #_pie</p>
-				<p>script activatables.js</p>
-				<p>script activatables('page', ['page-1', 'page-2', 'page-3', 'page-4'])
-				</p>
+				<br>
+				<h3>RESUMEN</h3> git status<br> git add .<br> git commit -m "Mensje Nuevo Commit"<br> git push origin master<br>
+
+				<p>1.- Abrir consola git<br> 2.- Cd /Carpeta de git<br> 3.- git init<br> 3.1.- git remote add origin https://github.com/berperan/berperan.github.io.git<br> 3.2.-git pull (Actualiza el repositorio local con el actual del servidor)<br> 4.- git status<br>					5.- git add ARCHIVO<br> 5.1.-git add . (Todos los Archivos)<br> 6.- git commit -m "Commit message Pasa al Head local pero aun no esta mandado." <br> 7.- git commit -a -m "Commit message Pasa al Head local pero aun no esta mandado.Ademas con -a no
+					se necesita el git add previo"<br> 8.- git push origin master (Lo envia al servidor remoto) </p>
+
+				Pagina con pequeño manual <a href="https://diego.com.es/compartir-y-actualizar-proyectos-en-git">MANUAL</a>
 			</div>
 			<div class="_articulo" id="page-4">
 				<header>
