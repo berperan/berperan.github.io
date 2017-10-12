@@ -11,7 +11,7 @@
 	/* position:relative; */
 
 	/******* /Final Esto centra el menu de cabecera *******/	
-	background: url(../img/degradado1.png) repeat-x 0px 0px;
+	background: url(https://berperan.github.io/img/degradado1.png) repeat-x 0px 0px;
 	background-color: #000000;
 	border: 4px solid #B30000;
 	border-radius: 15px;
@@ -45,7 +45,7 @@
 	text-decoration:none;
 	/* text-align:center; */
 	font-weight:bold;
-	background: url(../img/degradado1.png) repeat-x 0px 0px;
+	background: url(https://berperan.github.io/img/degradado1.png) repeat-x 0px 0px;
 	border:1px solid rgba(0,0,0,0.4);
 	border-radius: 5px;	
 	background-color: #FF9900; 
@@ -75,7 +75,7 @@
 	font-weight: bold;
 	display: block;
 	/* filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../img/degradado1.png'); */
-	background: url(../img/degradado1.png) repeat-x 0px 0px;
+	background: url(https://berperan.github.io/img/degradado1.png) repeat-x 0px 0px;
 	background-color: #B2B2B2;
 	border-radius: 15px;
 	text-align: center;
@@ -92,7 +92,7 @@
 
 body {
 	background-color: #000000;
-	background-image: url(../img/cesped.gif);
+	background-image: url(https://berperan.github.io/img/cesped.gif);
 }
 .fijo {
 	position:fixed;
