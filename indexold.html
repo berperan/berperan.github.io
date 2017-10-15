@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>ARTICULO</title>
+	<meta charset="UTF-8">
+
+	<!-- Your CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/articuloOscuro.css" />
+</head>
+
+<body>
+	<div class="contenedor">
+		<!-- Your HTML -->
+		<div id="_fijo">
+			<nav id="_menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="http://berperan.tiddlyspace.com/#">Tiddly</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="https://git-scm.com/book/es/v1/Git-en-un-servidor-El-demonio-Git">HELP-GIT</a></li>
+					<li> <a class="btn" href="#"> Inicio &#187;</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="_contenido">
+			<aside id="_lateral">
+				<h3>Articulos</h3>
+				<div class="lateral">
+					<ul>
+						<li><a href="#page-1">INSTRUCCIONES</a> </li>
+						<li><a href="#page-2">LISTADO</a> </li>
+						<li><a href="#page-3">ACTUALIZAR</a> </li>
+						<li><a href="#page-4">Berperan.github.io</a> </li>
+					</ul>
+				</div>
+			</aside>
+			<div class="_articulo" id="page-1">
+
+				<header>
+					<h2>INSTRUCCIONES</h2>
+				</header>
+				<p>
+					git config --global user.name "User"<br> git config --global user.email "User@mail.com"<br> git clone https://github.com/User/Proy.github.io.git<br> touch README.md<br> git add README.md<br> git commit -m "add README"<br> git push -u origin master<br>					cd existing_folder<br> git init<br> git status<br> git remote add origin https://github.com/berperan/berperan.github.io.git<br> git add .<br> git commit<br> git push -u origin master<br> git add archivo<br> git commit -m "comentario"<br> $ git commit
+					-a -m "-a no necesita add previo"<br> git push<br> Obteniendo ayuda<br> $ git<br> --help
+					<br> $ man git-
+					<br> Inicializando un repositorio en un directorio existente<br> $ git init<br> $ git add *.html<br> $ git add README<br> $ git commit –m "Mensaje descriptivo"<br> Estado del repositorio<br> $ git status<br> $ git log<br> Para ver repositorios remotos<br>					git remote -v<br>
+
+				</p>
+
+			</div>
+			<div class="_articulo" id="page-2">
+
+				<header>
+					<h2>Lista</h2>
+				</header>
+				<p>
+					$ git --version<br> $ git init<br> $ git status<br> $ git add index.html<br> $ git commit -m "Commit inicial"<br> $ git add .<br> $ git checkout master<br> $ git checkout -b CreaNuevaRama<br> $ git branch -d BorraRama<br> git push origin master<br>					git push origin
+					<br> git pull<br> git merge
+					<br>
+					<br>
+				</p>
+
+			</div>
+			<div class="_articulo" id="page-3">
+
+				<header>
+					<h2>Como Actualizar Repositorio </h2>
+				</header>
+				<br>
+				<h3>RESUMEN</h3> git status<br> git add .<br> git commit -m "Mensje Nuevo Commit"<br> git push origin master<br>
+
+				<p>1.- Abrir consola git<br> 2.- Cd /Carpeta de git<br> 3.- git init<br> 3.1.- git remote add origin https://github.com/berperan/berperan.github.io.git<br> 3.2.-git pull (Actualiza el repositorio local con el actual del servidor)<br> 4.- git status<br>					5.- git add ARCHIVO<br> 5.1.-git add . (Todos los Archivos)<br> 6.- git commit -m "Commit message Pasa al Head local pero aun no esta mandado." <br> 7.- git commit -a -m "Commit message Pasa al Head local pero aun no esta mandado.Ademas con -a no
+					se necesita el git add previo"<br> 8.- git push origin master (Lo envia al servidor remoto) </p>
+
+				Pagina con pequeño manual <a href="https://diego.com.es/compartir-y-actualizar-proyectos-en-git">MANUAL</a>
+			</div>
+			<div class="_articulo" id="page-4">
+				<header>
+					<h2>Berperan.github.io</h2>
+				</header>
+				<p>
+					Berperan.github.io <br> github Pages:<br> Link del sitio <br> https://nombredeusuario.github.io/
+
+					<br> Esto se debe al nombre el proyecto (nombredeusuario.github.io) <br> De lo contrario seria https://nombredeusuario.github.io/nombredelproyecto<br>
+
+				</p>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+	<footer id="_pie">
+		<h6>Copyright &copy; 2014 Berperan.</h6>
+	</footer>
+
+	<!-- Your dependent libraries -->
+	<!-- Your scripts -->
+	<!-- FINAL .................................................................................. -->
+	<script src="./js/activatables.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		activatables('page', ['page-1', 'page-2', 'page-3', 'page-4']);
+	</script>
+</body>
+
+</html>
