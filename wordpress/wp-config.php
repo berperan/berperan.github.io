@@ -25,7 +25,7 @@ define('DB_USER', 'berperan');
 define('DB_PASSWORD', 'angel5340)=·&');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define('DB_HOST', 'mysql://mysql:3306/');
+define('DB_HOST', '172.30.192.39:3306/TCP');
 
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8');
