@@ -128,53 +128,76 @@
 						<!-- NUEVO PARRAFO -->
 						<a name="TINY"></a>
 						<h3>TINY</h3>
-						<p>
-							<p>Editor——–&gt;nano.tcz<br />
-								Cambiar Teclado——&gt;kmaps.tcz<br />
-								cd /usr/share/kmap ——-&gt;/usr/share/kmap/qwerty/es.kmap<br />
-								Editar /opt/bootlocal.sh ——&gt;loadkmap /usr/share/kmap/qwerty/es.kmap<br />
-								Administrador Archivos———&gt; pcmanfm.tcz<br />
-								~/.config/transmission/settings.json<br />
-								&#8220;speed-limit-down&#8221;: 4000,<br />
-								&#8220;speed-limit-up&#8221;: 10,<br />
-								&#8220;download-dir&#8221;: &#8220;/mnt/sdb1/p2p&#8221;,<br />
-								Terminal——–&gt; transmission-daemon -a 127.0.0.1<br />
-							Navegador—–&gt;<a href="http://localhost:9091/transmission/web/" rel="nofollow">http://localhost:9091/transmission/web/</a></p>
-							<h1>Funcionamiento tiny core linux</h1>
-							<p>Arquitectura :<br />
-							Consta de dos archivos:</p>
-							<h3>vmlinuz</h3>
-							<p>y</p>
-							<h3>core.gz.</h3>
-							<p>Se cargan en la memoria. Las aplicaciones añadidas:</p>
-							<h3>/mnt/sda1/tce/optional</h3>
-							<p>Se cargaran si figuran en le fichero</p>
-							<h3>/mnt/sda1/tce/onboot.lst</h3>
-							<p>Las configuraciones que hace el usuario se guardan en el fichero comprimido</p>
-							<h3>/mnt/sda1/tce/mydata.tgz</h3>
-							<p>En el arranque se descomprime este fichero en los directorios</p>
-							<h3>$HOME &#8211; /opt</h3>
-							<p>y en los que figuren en el archivo</p>
-							<h3>/opt/.filetool.lst</h3>
-							<p>Despues del boot se ejecuta el scrip</p>
-							<h3>/opt/bootlocal.sh</h3>
-							<p>Si queremos añadir comandos concretos en el arranque los debemos incluir en este archivo</p>
-							<h3>filetool.sh</h3>
-							<p>TinyCore Linux proporciona la función de copia de seguridad que soporta la persistencia . El script hace una copia de seguridad de archivos creados en el directorio</p>
-							<h3>/opt</h3>
-							<p>y directorios</p>
-							<h3>$ HOME</h3>
-							<p>El script también copia los directorios que contienen los archivos de configuración asociados con software, si esos directorios se enumeran en el archivo</p>
-							<h3>/opt/.filetool.lst</h3>
-							<p>Podemos agregar estos comandos a la secuencia de comandos shell</p>
-							<h3>/opt/bootlocal.sh que se ejecuta en el arranque.</h3>
-							<p>&nbsp;</p>
-							<h3>$ filetool.sh -b</h3>
-							<p>Para apagar un sistema TinyCore Linux, utilice el comando:</p>
-							<h3>$ sudo poweroff</h3>
-							<p>Para reiniciar un sistema TinyCore Linux, utilice el comando:</p>
-							<h3>$ sudo reboot</h3><br>
-						</p>
+						<header>
+						<h2>Configurando Tiny Core</h2> <!-- h2 h2 -->
+					</header>
+					<p>
+						Editor—--&#62;nano.tcz
+						<br> Cambiar Teclado--&#62;kmaps.tcz 
+						<br> cd /usr/share/kmap --&#62;/usr/share/kmap/qwerty/es.kmap
+						<br> Editar /opt/bootlocal.sh --&#62;loadkmap < /usr/share/kmap/qwerty/es.kmap
+						<br> Administrador Archivos—--&#62; pcmanfm.tcz
+						<br> Video --&#62; mplayer.tcz
+						<br> Teclado Virtual --&#62; xvkbd.tcz
+						<br> Sonido --&#62; mplayer
+						<br> alsa-config, alsa, pulseaudio, alsactl init, sudo alsactl store, 
+						<br> ~/.config/transmission/settings.json
+						
+						<br> "speed-limit-down": 4000,
+						<br> "speed-limit-up": 10, 
+						<br> "download-dir": "/mnt/sdb1/p2p", 
+						<br> Terminal—--&#62; transmission-daemon -a 127.0.0.1
+						<br> Navegador--&#62;http://localhost:9091/transmission/web/
+						<br> Carpeta1 /mnt/sda1/tce/optional/p2p
+						<br> Carpeta /mnt/sdb1/p2p
+						<br> Compartir con Datos.vdi de winxp_lite
+						<br>
+						<br>================================
+						<h2>UPGRADE COPIANDO FILES</h2><!-- h2---------------- h2 -->
+						<br>Replace your  core.gz  and  vmlinuz  files.
+						
+						<br>The 32 bit versions are here (core.gz  and  vmlinuz):
+						<br>http://tinycorelinux.net/11.x/x86/release/distribution_files/
+						
+						<br>The 64 bit versions are here (corepure64.gz  and  vmlinuz64):
+						<br>http://tinycorelinux.net/11.x/x86_64/release/distribution_files/
+					</p>
+					<h1>Funcionamiento tiny core linux</h1><!-- h1 h1 -------------->
+					<p>Arquitectura :
+						<br> Consta de dos archivos:
+						<h3>vmlinuz</h3> y
+						<h3>core.gz.</h3> Se cargan en la memoria. Aplicaciones añadidas:
+						<br>
+						<h3>/mnt/sda1/tce/optional</h3> Se cargaran si figuran en le fichero
+						<h3>/mnt/sda1/tce/onboot.lst</h3>
+						<br> Las configuraciones que hace el usuario se guardan en el fichero comprimido
+						<h3>/mnt/sda1/tce/mydata.tgz</h3>
+						<br> En el arranque se descomprime este fichero en los directorios
+						<h3>$HOME - /opt</h3> y en los que figuren en el archivo
+						<h3>/opt/.filetool.lst</h3>
+						<br> Despues del boot se ejecuta el scrip
+						<h3>/opt/bootlocal.sh</h3> si queremos añadir comandos concretos en el arranque los debemos incluir en este archivo
+						<br> El script
+						<h3>filetool.sh</h3> TinyCore Linux proporciona la función de copia de seguridad que soporta la persistencia . El script hace una copia de seguridad de archivos creados en el directorio
+						<h3>/opt</h3> y directorios
+						<h3>$ HOME</h3> El script también copia de seguridad de los directorios que contienen los archivos de configuración asociados con software como Quagga red, si esos directorios se enumeran en el archivo
+						<h3>/opt/.filetool.lst</h3>
+						<br> Cambios en la configuración de la red hacen uso de los comandos de Linux como el comando ip no se puede guardar. 
+						<br> Sin embargo, podemos agregar estos comandos a la secuencia de comandos shell
+						<h3>/opt/bootlocal.sh</h3>, que se ejecuta en el arranque.
+						<br> Una vez que haya creado las configuraciones de red que desea guardar, editando el script
+						<h3>/opt/bootlocal.sh</h3> y
+						<h3>/</h3> o guardar los archivos de configuración o Quagga Open vSwitch, una copia de seguridad de la configuración con el script
+						<h3>filetool.sh</h3> de la siguiente manera:
+						<br>
+						<h3>$ filetool.sh -b</h3> 
+						<br> Para apagar un sistema TinyCore Linux, utilice el comando:
+						<h3>$ sudo poweroff</h3> 
+						<br> Para reiniciar un sistema TinyCore Linux, utilice el comando:
+						<br>
+						<h3>$ sudo reboot</h3>
+						<br>
+					</p>
 						============================================<br>
 						<!-- NUEVO PARRAFO -->
 						<a name="NUEVO"></a>
